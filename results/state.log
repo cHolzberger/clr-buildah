@@ -1,0 +1,17 @@
+2019-07-18 08:21:04,534 - Mock Version: 1.2.14
+2019-07-18 08:21:05,194 - Start: dnf update
+2019-07-18 08:21:25,396 - Finish: dnf update
+2019-07-18 08:21:25,412 - Finish: chroot init
+2019-07-18 08:21:25,421 - Start: buildsrpm
+2019-07-18 08:21:25,456 - Start: rpmbuild -bs
+2019-07-18 08:21:25,586 - Finish: rpmbuild -bs
+2019-07-18 08:21:25,604 - Finish: buildsrpm
+2019-07-18 08:21:25,606 - Finish: run
+2019-07-18 08:21:34,317 - Mock Version: 1.2.14
+2019-07-18 08:21:34,827 - Start: dnf update
+2019-07-18 08:21:54,484 - Finish: dnf update
+2019-07-18 08:21:54,501 - Finish: chroot init
+2019-07-18 08:21:54,505 - Start: build phase for ms-buildah-1.9.1-1.src.rpm
+2019-07-18 08:21:54,512 - Start: build setup for ms-buildah-1.9.1-1.src.rpm
+2019-07-18 08:22:07,784 - Finish: build setup for ms-buildah-1.9.1-1.src.rpm
+2019-07-18 08:22:07,784 - Start: rpmbuild ms-buildah-1.9.1-1.src.rpm

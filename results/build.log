@@ -1,0 +1,212 @@
+Mock Version: 1.2.14
+ENTER do(['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/ms-buildah.spec'], chrootPath='/var/lib/mock/clear-ms-buildah/root'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'CCACHE_DIR': '/var/tmp/ccache', 'CCACHE_UMASK': '002'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7f713f8ede10>timeout=0uid=1000gid=1000user='mockbuild'printOutput=False)
+Executing command: ['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/ms-buildah.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'CCACHE_DIR': '/var/tmp/ccache', 'CCACHE_UMASK': '002'} and shell False
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/ms-buildah-1.9.1-1.src.rpm
+Child return code was: 0
+LEAVE do --> 
+
+ENTER do(['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps  /builddir/build/SPECS/ms-buildah.spec '], chrootPath='/var/lib/mock/clear-ms-buildah/root'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'CCACHE_DIR': '/var/tmp/ccache', 'CCACHE_UMASK': '002'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7f713f8ede10>timeout=0uid=1000gid=1000user='mockbuild'private_network=TrueprintOutput=False)
+Executing command: ['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps  /builddir/build/SPECS/ms-buildah.spec '] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'CCACHE_DIR': '/var/tmp/ccache', 'CCACHE_UMASK': '002'} and shell False
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.a6nlds
++ umask 022
++ cd /builddir/build/BUILD
++ LANG=en_US.UTF-8
++ export LANG
++ unset DISPLAY
++ cd /builddir/build/BUILD
++ rm -rf buildah-1.9.1
++ /usr/bin/gzip -dc /builddir/build/SOURCES/v1.9.1.tar.gz
++ /usr/bin/tar -xf -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd buildah-1.9.1
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.mc6U9K
++ umask 022
++ cd /builddir/build/BUILD
++ cd buildah-1.9.1
++ LANG=en_US.UTF-8
++ export LANG
++ unset DISPLAY
++ unset PYTHONOPTIMIZE
++ CFLAGS='-O2 -g -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=32 -Wformat -Wformat-security -Wl,-z,now,-z,relro,-z,max-page-size=0x1000,-z,separate-code -Wno-error -ftree-vectorize -ftree-slp-vectorize -Wl,--enable-new-dtags -fcf-protection=return -m64 -march=westmere -mtune=haswell -fasynchronous-unwind-tables -fno-omit-frame-pointer -Wp,-D_REENTRANT'
++ export CFLAGS
++ http_proxy=http://127.0.0.1:9/
++ export http_proxy
++ https_proxy=http://127.0.0.1:9/
++ export https_proxy
++ ftp_proxy=http://127.0.0.1:9/
++ export ftp_proxy
++ no_proxy=localhost,127.0.0.1,0.0.0.0
++ export no_proxy
++ CXXFLAGS='-O2 -g -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=32 -Wformat -Wformat-security -Wl,-z,now,-z,relro,-z,max-page-size=0x1000,-z,separate-code -Wno-error -ftree-vectorize -ftree-slp-vectorize -Wl,--enable-new-dtags -fcf-protection=return -m64 -march=westmere -mtune=haswell -fasynchronous-unwind-tables -fno-omit-frame-pointer -Wp,-D_REENTRANT'
++ export CXXFLAGS
++ FFLAGS='-g -O3 -feliminate-unused-debug-types  -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=32 -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -malign-data=abi -fno-semantic-interposition -ftree-vectorize  -ftree-loop-vectorize -Wl,--enable-new-dtags '
++ export FFLAGS
++ LD_AS_NEEDED=1
++ export LD_AS_NEEDED
++ PKG_CONFIG_LIBDIR=/usr/lib64/pkgconfig
++ export PKG_CONFIG_LIBDIR
++ PATH=/usr/lib64/ccache/bin:/usr/local/bin:/usr/bin
++ export PATH
++ export http_proxy=http://127.0.0.1:9/
++ http_proxy=http://127.0.0.1:9/
++ export https_proxy=http://127.0.0.1:9/
++ https_proxy=http://127.0.0.1:9/
++ export no_proxy=localhost,127.0.0.1,0.0.0.0
++ no_proxy=localhost,127.0.0.1,0.0.0.0
++ export LANG=C.UTF-8
++ LANG=C.UTF-8
++ go build
+go: k8s.io/client-go@v0.0.0-20181219152756-3dd551c0f083: unrecognized import path "k8s.io/client-go" (https fetch: Get https://k8s.io/client-go?go-get=1: proxyconnect tcp: dial tcp 127.0.0.1:9: connect: connection refused)
+go: golang.org/x/sys@v0.0.0-20190422165155-953cdadca894: unrecognized import path "golang.org/x/sys" (https fetch: Get https://golang.org/x/sys?go-get=1: proxyconnect tcp: dial tcp 127.0.0.1:9: connect: connection refused)
+go: finding github.com/inconshreveable/mousetrap v1.0.0
+go: finding github.com/docker/libnetwork v0.8.0-dev.2.0.20190625141545-5a177b73e316
+go: finding github.com/containernetworking/cni v0.7.0-rc2
+go: finding github.com/mattn/go-isatty v0.0.4
+go: finding github.com/moby/moby v0.0.0-20171005181806-f8806b18b4b9
+go: finding github.com/seccomp/libseccomp-golang v0.9.0
+go: finding github.com/containers/storage v1.12.13
+go: finding github.com/openshift/imagebuilder v1.1.0
+go: finding github.com/sirupsen/logrus v1.4.2
+go: finding github.com/xeipuuv/gojsonschema v1.1.0
+go: github.com/containernetworking/cni@v0.7.0-rc2: unknown revision v0.7.0-rc2
+go: github.com/mattn/go-isatty@v0.0.4: unknown revision v0.0.4
+go: github.com/inconshreveable/mousetrap@v1.0.0: unknown revision v1.0.0
+go: github.com/seccomp/libseccomp-golang@v0.9.0: unknown revision v0.9.0
+go: github.com/xeipuuv/gojsonschema@v1.1.0: unknown revision v1.1.0
+go: github.com/containers/storage@v1.12.13: unknown revision v1.12.13
+go: github.com/openshift/imagebuilder@v1.1.0: unknown revision v1.1.0
+go: finding github.com/pkg/errors v0.8.1
+go: finding github.com/docker/libtrust v0.0.0-20160708172513-aabc10ec26b7
+go: github.com/sirupsen/logrus@v1.4.2: unknown revision v1.4.2
+go: finding github.com/cyphar/filepath-securejoin v0.2.1
+go: github.com/docker/libnetwork@v0.8.0-dev.2.0.20190625141545-5a177b73e316: git fetch -f origin refs/heads/*:refs/heads/* refs/tags/*:refs/tags/* in /builddir/go/pkg/mod/cache/vcs/b336f1f9b64be3a88933393f9543b3e76e4a5bce0bb4b4ed42f9a075055e2a6e: exit status 128:
+	fatal: unable to access 'https://github.com/docker/libnetwork/': Failed to connect to 127.0.0.1 port 9: Connection refused
+go: finding github.com/Microsoft/hcsshim v0.8.3
+go: finding github.com/mattn/go-shellwords v1.0.3
+go: finding github.com/ostreedev/ostree-go v0.0.0-20181112201119-9ab99253d365
+go: finding github.com/opencontainers/go-digest v1.0.0-rc1
+go: github.com/moby/moby@v0.0.0-20171005181806-f8806b18b4b9: git fetch -f origin refs/heads/*:refs/heads/* refs/tags/*:refs/tags/* in /builddir/go/pkg/mod/cache/vcs/1097ece8a25b878bc63ce9db6595e21cf6ea2a583f69c62e674fc2d43f0df467: exit status 128:
+	fatal: unable to access 'https://github.com/moby/moby/': Failed to connect to 127.0.0.1 port 9: Connection refused
+go: github.com/cyphar/filepath-securejoin@v0.2.1: unknown revision v0.2.1
+go: finding github.com/ghodss/yaml v1.0.0
+go: github.com/pkg/errors@v0.8.1: unknown revision v0.8.1
+go: finding github.com/onsi/ginkgo v1.6.0
+go: github.com/Microsoft/hcsshim@v0.8.3: unknown revision v0.8.3
+go: golang.org/x/sync@v0.0.0-20181221193216-37e7f081c4d4: unrecognized import path "golang.org/x/sync" (https fetch: Get https://golang.org/x/sync?go-get=1: proxyconnect tcp: dial tcp 127.0.0.1:9: connect: connection refused)
+go: golang.org/x/crypto@v0.0.0-20190103213133-ff983b9c42bc: unrecognized import path "golang.org/x/crypto" (https fetch: Get https://golang.org/x/crypto?go-get=1: proxyconnect tcp: dial tcp 127.0.0.1:9: connect: connection refused)
+go: gopkg.in/yaml.v2@v2.2.2: unrecognized import path "gopkg.in/yaml.v2" (https fetch: Get https://gopkg.in/yaml.v2?go-get=1: proxyconnect tcp: dial tcp 127.0.0.1:9: connect: connection refused)
+go: github.com/mattn/go-shellwords@v1.0.3: unknown revision v1.0.3
+go: finding github.com/hashicorp/go-multierror v1.0.0
+go: github.com/opencontainers/go-digest@v1.0.0-rc1: unknown revision v1.0.0-rc1
+go: github.com/onsi/ginkgo@v1.6.0: unknown revision v1.6.0
+go: finding github.com/opencontainers/selinux v1.2.2
+go: finding github.com/VividCortex/ewma v1.1.1
+go: github.com/docker/libtrust@v0.0.0-20160708172513-aabc10ec26b7: git fetch -f origin refs/heads/*:refs/heads/* refs/tags/*:refs/tags/* in /builddir/go/pkg/mod/cache/vcs/da07fa0f90047c1906572bf6085c832cc0d3e6a5b251b2c1daacbbe31dba899f: exit status 128:
+	fatal: unable to access 'https://github.com/docker/libtrust/': Failed to connect to 127.0.0.1 port 9: Connection refused
+go: github.com/ghodss/yaml@v1.0.0: unknown revision v1.0.0
+go: finding github.com/onsi/gomega v1.4.3
+go: finding github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415
+go: github.com/ostreedev/ostree-go@v0.0.0-20181112201119-9ab99253d365: git fetch -f origin refs/heads/*:refs/heads/* refs/tags/*:refs/tags/* in /builddir/go/pkg/mod/cache/vcs/6736e748f1b75ad9d90c39f355478dc77f2e1e3b667f275b5de8e39dad2de37c: exit status 128:
+	fatal: unable to access 'https://github.com/ostreedev/ostree-go/': Failed to connect to 127.0.0.1 port 9: Connection refused
+go: golang.org/x/net@v0.0.0-20190107210223-45ffb0cd1ba0: unrecognized import path "golang.org/x/net" (https fetch: Get https://golang.org/x/net?go-get=1: proxyconnect tcp: dial tcp 127.0.0.1:9: connect: connection refused)
+go: finding github.com/klauspost/pgzip v1.2.1
+go: finding github.com/klauspost/compress v1.4.1
+go: github.com/hashicorp/go-multierror@v1.0.0: unknown revision v1.0.0
+go: finding github.com/containers/image v2.0.0+incompatible
+go: finding github.com/docker/go-units v0.3.3
+go: github.com/opencontainers/selinux@v1.2.2: unknown revision v1.2.2
+go: github.com/onsi/gomega@v1.4.3: unknown revision v1.4.3
+go: finding github.com/syndtr/gocapability v0.0.0-20180916011248-d98352740cb2
+go: github.com/VividCortex/ewma@v1.1.1: unknown revision v1.1.1
+go: finding github.com/xeipuuv/gojsonpointer v0.0.0-20180127040702-4e3ac2762d5f
+go: github.com/klauspost/compress@v1.4.1: unknown revision v1.4.1
+go: github.com/klauspost/pgzip@v1.2.1: unknown revision v1.2.1
+go: github.com/containers/image@v2.0.0+incompatible: unknown revision v2.0.0
+go: finding github.com/docker/docker-credential-helpers v0.6.1
+go: finding github.com/containerd/continuity v0.0.0-20181203112020-004b46473808
+go: github.com/docker/go-units@v0.3.3: unknown revision v0.3.3
+go: finding github.com/tchap/go-patricia v2.2.6+incompatible
+go: github.com/xeipuuv/gojsonreference@v0.0.0-20180127040603-bd5ef7bd5415: git fetch -f origin refs/heads/*:refs/heads/* refs/tags/*:refs/tags/* in /builddir/go/pkg/mod/cache/vcs/1c853cf6997cc6c35b7186645cec467477abe75023b90852026434182d97eee7: exit status 128:
+	fatal: unable to access 'https://github.com/xeipuuv/gojsonreference/': Failed to connect to 127.0.0.1 port 9: Connection refused
+go: finding github.com/spf13/pflag v1.0.3
+go: finding github.com/vbatts/tar-split v0.10.2
+go: finding github.com/pquerna/ffjson v0.0.0-20171002144729-d49c2bc1aa13
+go: finding github.com/opencontainers/image-spec v1.0.1
+go: github.com/docker/docker-credential-helpers@v0.6.1: unknown revision v0.6.1
+go: finding github.com/imdario/mergo v0.3.6
+go: github.com/tchap/go-patricia@v2.2.6+incompatible: unknown revision v2.2.6
+go: github.com/syndtr/gocapability@v0.0.0-20180916011248-d98352740cb2: git fetch -f origin refs/heads/*:refs/heads/* refs/tags/*:refs/tags/* in /builddir/go/pkg/mod/cache/vcs/9325046eaf69fe74b7d765df9e31c31ceb3f57013ea20b2db645b2343184287d: exit status 128:
+	fatal: unable to access 'https://github.com/syndtr/gocapability/': Failed to connect to 127.0.0.1 port 9: Connection refused
+go: github.com/spf13/pflag@v1.0.3: unknown revision v1.0.3
+go: github.com/vbatts/tar-split@v0.10.2: unknown revision v0.10.2
+go: github.com/xeipuuv/gojsonpointer@v0.0.0-20180127040702-4e3ac2762d5f: git fetch -f origin refs/heads/*:refs/heads/* refs/tags/*:refs/tags/* in /builddir/go/pkg/mod/cache/vcs/9edb38f89cde3f8c5a3287be807e2aec4d57ae79713260fde4ffac2f27561fa3: exit status 128:
+	fatal: unable to access 'https://github.com/xeipuuv/gojsonpointer/': Failed to connect to 127.0.0.1 port 9: Connection refused
+go: finding github.com/blang/semver v3.5.0+incompatible
+go: finding github.com/docker/distribution v0.0.0-20170817175659-5f6282db7d65
+go: finding github.com/vbauerster/mpb v3.3.4+incompatible
+go: finding github.com/fsouza/go-dockerclient v1.3.0
+go: github.com/containerd/continuity@v0.0.0-20181203112020-004b46473808: git fetch -f origin refs/heads/*:refs/heads/* refs/tags/*:refs/tags/* in /builddir/go/pkg/mod/cache/vcs/278eab5e8acd6f773b649a33a135a9e82194734f0b804646bf18528daeacd2ae: exit status 128:
+	fatal: unable to access 'https://github.com/containerd/continuity/': Failed to connect to 127.0.0.1 port 9: Connection refused
+go: github.com/imdario/mergo@v0.3.6: unknown revision v0.3.6
+go: github.com/opencontainers/image-spec@v1.0.1: unknown revision v1.0.1
+go: github.com/pquerna/ffjson@v0.0.0-20171002144729-d49c2bc1aa13: git fetch -f origin refs/heads/*:refs/heads/* refs/tags/*:refs/tags/* in /builddir/go/pkg/mod/cache/vcs/bb0de6c398a5f5a735bbe68ef270a7552d5905c15a21db3f6b3d4d65481369a1: exit status 128:
+	fatal: unable to access 'https://github.com/pquerna/ffjson/': Failed to connect to 127.0.0.1 port 9: Connection refused
+go: finding github.com/mtrmac/gpgme v0.0.0-20170102180018-b2432428689c
+go: finding github.com/mistifyio/go-zfs v2.1.1+incompatible
+go: finding github.com/DataDog/zstd v1.4.0
+go: github.com/vbauerster/mpb@v3.3.4+incompatible: unknown revision v3.3.4
+go: github.com/blang/semver@v3.5.0+incompatible: unknown revision v3.5.0
+go: github.com/fsouza/go-dockerclient@v1.3.0: unknown revision v1.3.0
+go: finding github.com/gogo/protobuf v1.2.0
+go: finding github.com/ulikunitz/xz v0.5.5
+go: finding github.com/etcd-io/bbolt v1.3.2
+go: github.com/mistifyio/go-zfs@v2.1.1+incompatible: unknown revision v2.1.1
+go: finding github.com/spf13/cobra v0.0.3
+go: finding github.com/BurntSushi/toml v0.2.0
+go: finding github.com/opencontainers/runtime-tools v0.8.0
+go: github.com/docker/distribution@v0.0.0-20170817175659-5f6282db7d65: git fetch -f origin refs/heads/*:refs/heads/* refs/tags/*:refs/tags/* in /builddir/go/pkg/mod/cache/vcs/80b3acbee6ab6828cbdf1bb672722bc063a15e0f09bd3c6d10d932a2741bffd7: exit status 128:
+	fatal: unable to access 'https://github.com/docker/distribution/': Failed to connect to 127.0.0.1 port 9: Connection refused
+go: github.com/ulikunitz/xz@v0.5.5: unknown revision v0.5.5
+go: github.com/DataDog/zstd@v1.4.0: unknown revision v1.4.0
+go: finding github.com/klauspost/cpuid v1.2.0
+go: github.com/gogo/protobuf@v1.2.0: unknown revision v1.2.0
+go: github.com/spf13/cobra@v0.0.3: unknown revision v0.0.3
+go: github.com/etcd-io/bbolt@v1.3.2: unknown revision v1.3.2
+go: finding github.com/opencontainers/runc v1.0.0-rc6
+go: finding github.com/ishidawataru/sctp v0.0.0-20180918013207-6e2cb1366111
+go: finding github.com/opencontainers/runtime-spec v1.0.0
+go: github.com/mtrmac/gpgme@v0.0.0-20170102180018-b2432428689c: git fetch -f origin refs/heads/*:refs/heads/* refs/tags/*:refs/tags/* in /builddir/go/pkg/mod/cache/vcs/98b0d9d455cbe4c4fc5145793c725d7b7f641f8547512743723bd852f8d877b7: exit status 128:
+	fatal: unable to access 'https://github.com/mtrmac/gpgme/': Failed to connect to 127.0.0.1 port 9: Connection refused
+go: finding github.com/seccomp/containers-golang v0.0.0-20180629143253-cdfdaa7543f4
+go: github.com/BurntSushi/toml@v0.2.0: unknown revision v0.2.0
+go: github.com/opencontainers/runtime-tools@v0.8.0: unknown revision v0.8.0
+go: github.com/klauspost/cpuid@v1.2.0: unknown revision v1.2.0
+go: github.com/opencontainers/runc@v1.0.0-rc6: unknown revision v1.0.0-rc6
+go: github.com/opencontainers/runtime-spec@v1.0.0: unknown revision v1.0.0
+go: github.com/ishidawataru/sctp@v0.0.0-20180918013207-6e2cb1366111: git fetch -f origin refs/heads/*:refs/heads/* refs/tags/*:refs/tags/* in /builddir/go/pkg/mod/cache/vcs/7483ed47bf056bd36e883cc7dfeb37d35eb1d92575610242b582d0b9862a4630: exit status 128:
+	fatal: unable to access 'https://github.com/ishidawataru/sctp/': Failed to connect to 127.0.0.1 port 9: Connection refused
+go: github.com/seccomp/containers-golang@v0.0.0-20180629143253-cdfdaa7543f4: git fetch -f origin refs/heads/*:refs/heads/* refs/tags/*:refs/tags/* in /builddir/go/pkg/mod/cache/vcs/44cd72f98a36c9c5de2e33890cf9a45b301278720ef0df5c554a6e3c499808c8: exit status 128:
+	fatal: unable to access 'https://github.com/seccomp/containers-golang/': Failed to connect to 127.0.0.1 port 9: Connection refused
+go: error loading module requirements
+error: Bad exit status from /var/tmp/rpm-tmp.mc6U9K (%build)
+RPM build errors:
+    Bad exit status from /var/tmp/rpm-tmp.mc6U9K (%build)
+Child return code was: 1
+EXCEPTION: Command failed. See logs for output.
+ # bash --login -c /usr/bin/rpmbuild -bb --target x86_64 --nodeps  /builddir/build/SPECS/ms-buildah.spec 
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/mockbuild/trace_decorator.py", line 84, in trace
+    result = func(*args, **kw)
+  File "/usr/lib/python3.7/site-packages/mockbuild/util.py", line 531, in do
+    raise exception.Error("Command failed. See logs for output.\n # %s" % (command,), child.returncode)
+mockbuild.exception.Error: Command failed. See logs for output.
+ # bash --login -c /usr/bin/rpmbuild -bb --target x86_64 --nodeps  /builddir/build/SPECS/ms-buildah.spec 
+LEAVE do --> EXCEPTION RAISED
+
